@@ -12,6 +12,7 @@
 		50C37F4C229606600002080C /* ViewFinder_Video.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 50C37F4A229606600002080C /* ViewFinder_Video.xcdatamodeld */; };
 		50C37F4E229606620002080C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C37F4D229606620002080C /* Assets.xcassets */; };
 		50C37F51229606620002080C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C37F4F229606620002080C /* LaunchScreen.storyboard */; };
+		50C37F5922960B1C0002080C /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C37F5822960B1C0002080C /* AddPhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		50C37F4D229606620002080C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50C37F50229606620002080C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50C37F52229606620002080C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50C37F5822960B1C0002080C /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				50C37F43229606600002080C /* AppDelegate.swift */,
 				50C37F47229606600002080C /* Main.storyboard */,
+				50C37F5822960B1C0002080C /* AddPhotoViewController.swift */,
 				50C37F4D229606620002080C /* Assets.xcassets */,
 				50C37F4F229606620002080C /* LaunchScreen.storyboard */,
 				50C37F52229606620002080C /* Info.plist */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50C37F4C229606600002080C /* ViewFinder_Video.xcdatamodeld in Sources */,
+				50C37F5922960B1C0002080C /* AddPhotoViewController.swift in Sources */,
 				50C37F44229606600002080C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

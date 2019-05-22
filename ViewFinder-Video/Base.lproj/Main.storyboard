@@ -49,7 +49,7 @@
         <!--Add New Photo-->
         <scene sceneID="LHc-ym-MZu">
             <objects>
-                <viewController id="A2V-Zk-Bu3" sceneMemberID="viewController">
+                <viewController id="A2V-Zk-Bu3" customClass="AddPhotoViewController" customModule="ViewFinder_Video" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8SJ-Gt-nTT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -69,10 +69,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDX-Fz-u93">
                                 <rect key="frame" x="40" y="405" width="295" height="30"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="savePhotoTapped:" destination="A2V-Zk-Bu3" eventType="touchUpInside" id="tEu-zH-blV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylP-Ot-MIP">
                                 <rect key="frame" x="40" y="597" width="295" height="30"/>
                                 <state key="normal" title="Access Photo Library"/>
+                                <connections>
+                                    <action selector="accessLibraryTapped:" destination="A2V-Zk-Bu3" eventType="touchUpInside" id="arq-pP-roj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -93,6 +99,10 @@
                         <viewLayoutGuide key="safeArea" id="qXI-KK-6xN"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add New Photo" id="Pye-uE-yoD"/>
+                    <connections>
+                        <outlet property="captionInput" destination="Yqv-V0-3Ip" id="a3s-a9-EsZ"/>
+                        <outlet property="photoToSave" destination="8Em-Xo-NlX" id="6Iv-AY-rx4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K7c-Ok-26u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
