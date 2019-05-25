@@ -61,15 +61,19 @@ class PhotoTableViewController: UITableViewController {
         }
         return cell
     }
- 
+    // this say, when you perform a segue with the identifier "moveToDetail", send along the photo that was tapped on, to that other VC.
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "moveToDetail", sender: photos[indexPath.row])
     }
-
+    // right before a segue takes place, this gets called
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // we check to see if it's the "moveToDetail" segue. If it is, we have some special instructions.
         if segue.identifier == "moveToDetail" {
+            // the photoDetailView variable is actually the PhotoDetailVC CLASS! Kind of weird!
             if let photoDetailView = segue.destination as? PhotoDetailViewController {
+                // We have to make sure that the sender of the photo is from the Photos CD class
                 if let photoToSend = sender as? Photos {
+                    // we update the property "photo" of the PhotoDetail VC to the photo we want to show
                     photoDetailView.photo = photoToSend
                 }
             }
