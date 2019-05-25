@@ -41,10 +41,53 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="wJE-4B-NsA" kind="show" identifier="moveToDetail" id="RqL-je-V7D"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DcI-kx-wdO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="808.79999999999995" y="149.77511244377811"/>
+        </scene>
+        <!--Photo Detail View Controller-->
+        <scene sceneID="gGv-vt-U9l">
+            <objects>
+                <viewController id="wJE-4B-NsA" customClass="PhotoDetailViewController" customModule="ViewFinder_Video" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R7b-lV-Zs4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6NG-Pu-H9V">
+                                <rect key="frame" x="30" y="94" width="315" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="o49-FO-6fI"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHC-5u-XzI">
+                                <rect key="frame" x="166.5" y="396" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6NG-Pu-H9V" firstAttribute="leading" secondItem="5d4-Mt-YWg" secondAttribute="leading" constant="30" id="E7O-NR-xzS"/>
+                            <constraint firstItem="IHC-5u-XzI" firstAttribute="top" secondItem="6NG-Pu-H9V" secondAttribute="bottom" constant="52" id="F6G-gJ-xdf"/>
+                            <constraint firstItem="IHC-5u-XzI" firstAttribute="centerX" secondItem="R7b-lV-Zs4" secondAttribute="centerX" id="GHR-e7-vnd"/>
+                            <constraint firstItem="5d4-Mt-YWg" firstAttribute="trailing" secondItem="6NG-Pu-H9V" secondAttribute="trailing" constant="30" id="bLX-sq-H7q"/>
+                            <constraint firstItem="6NG-Pu-H9V" firstAttribute="top" secondItem="5d4-Mt-YWg" secondAttribute="top" constant="30" id="moY-8Q-huv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5d4-Mt-YWg"/>
+                    </view>
+                    <connections>
+                        <outlet property="captionDetail" destination="IHC-5u-XzI" id="C9r-9i-tcd"/>
+                        <outlet property="photoDetail" destination="6NG-Pu-H9V" id="QiI-6W-srR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aPX-or-Wav" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="807.20000000000005" y="829.83508245877067"/>
         </scene>
         <!--Add New Photo-->
         <scene sceneID="LHc-ym-MZu">
